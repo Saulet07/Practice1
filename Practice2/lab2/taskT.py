@@ -1,6 +1,6 @@
 a = int(input())
 
-ava ={}
+ava = {}
 for i in range(a):
     x = input().split()
     if x[0] == "set":
