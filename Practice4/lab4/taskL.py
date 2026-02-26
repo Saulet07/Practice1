@@ -4,6 +4,7 @@ a = json.loads(input())
 b = json.loads(input())
 
 ans = []
+
 def check(a, b, path):
     keys = set(a) | set(b)
     for k in keys:
@@ -28,7 +29,7 @@ def check(a, b, path):
 check(a, b, "")
 
 if len(ans) == 0:
-    print("No difference")
+    print("No differences")
 else:
     for x in sorted(ans):
         print(x)
