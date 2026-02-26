@@ -1,6 +1,7 @@
 x = int(input())
 def k(x):
+    a, b = 0, 1
     for i in range(x):
-        yield (i - 1) + (i - 2)
-for i in k(x):
-    print(i)
+        yield a
+        a, b = b, a + b
+print(*k(x), sep=",")

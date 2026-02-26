@@ -1,7 +1,8 @@
-e=[12, 32, 31, 24, 13]
-mx = 0
-for i in e:
-    if i > mx:
-        mx = i
-e.sort(reverse = True)
-print(e[1])
+b = list(map(int, input().split()))
+mn = 0
+for x in b:
+    if x < mn and x >= 0:
+        mn = x
+    else:
+        print(-1)
+print(mn)
